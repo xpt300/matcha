@@ -1,0 +1,45 @@
+.Container {
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.Container Icon {
+    position: absolute;
+} 
+
+.Icon {
+    color: #FF1493;
+    margin: 0 0px;  
+}
+
+.Input {
+    display: inline-block;
+    width: 80%;
+    height: 35px;
+    border: 0;
+    border-bottom: 1px solid #24292e;
+    background-color: white;
+    font-size: 0.9em;
+    padding: 8px 8px;
+    font-weight: 400; 
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.1em;
+    margin: 3px;
+}
+
+.Input:focus{
+    border-bottom: 1px solid #FF1493;
+    outline:none;
+    transition: .3s;
+}
+
+@media (max-width: 570px) {
+    .Container {
+        width: 100%;
+        margin-left: 10px;
+    }
+    .Icon {
+        margin: 0;
+    }
+}

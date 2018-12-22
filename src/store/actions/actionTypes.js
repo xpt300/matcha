@@ -1,0 +1,14 @@
+export const VERIFICATION = 'VERIFICATION';
+export const CONNEXION = 'CONNEXION';
+export const CONNEXION_FAILED = 'CONNEXION_FAILED';
+export const ERROR_RESET = 'ERROR_RESET';
+export const ACCOUNT_CONFIRMATION = 'ACCOUNT_CONFIRMATION';
+export const QUERY_FALSE = 'QUERY_FALSE';
+export const NEWLOGIN_PASSWD = 'NEWLOGIN_PASSWD';
+export const MAIL_EXIST = 'MAIL_EXIST';
+export const NEW_INFO = 'NEW_INFO';
+export const NEW_ADDRESS = 'NEW_ADDRESS';
+export const NEW_PASSWD = 'NEW_PASSWD';
+export const REDIRECTION = 'REDIRECTION'
+export const NEW_ADRESS_XY = 'NEW_ADRESS_XY';
+export const RECHERCHE = 'RECHERCHE';

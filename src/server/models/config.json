@@ -1,0 +1,6 @@
+{
+    "secret": "secret-matcha",
+    "refreshTokenSecret": "secret-matcha",
+    "tokenLife": 86400,
+    "refreshTokenLife": 86400
+}

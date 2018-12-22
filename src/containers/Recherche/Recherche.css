@@ -1,0 +1,23 @@
+.Recherche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Button {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+}
+
+@media (max-width: 800px) {
+    .Button {
+        align-items: flex-end;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+}

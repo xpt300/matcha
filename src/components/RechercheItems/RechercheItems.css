@@ -1,0 +1,17 @@
+.Items {
+    background-color: #ecf0f1;
+    border-radius: 15px;
+    box-shadow: 0px 0px 21px 0px #bdc3c7;
+    display: flex;
+    position: absolute;
+    margin-top: 80px;
+    width: 40%;
+    height: 70%;
+}
+
+@media (max-width: 800px) {
+    .Items {
+        height: 60%;
+        width: 70%;
+    }
+}

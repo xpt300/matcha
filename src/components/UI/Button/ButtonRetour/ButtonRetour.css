@@ -1,0 +1,12 @@
+.Button {
+    margin-left: -70%;
+    width: 30%;
+    height: 30%;
+    padding: 3px;
+    border: none;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
+    color: #24292e;
+    outline: none;
+}

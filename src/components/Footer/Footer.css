@@ -1,0 +1,21 @@
+.Footer {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    background-color: #24292e;
+}
+
+.Footer p {
+    color: white;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1em;
+}
+
+.Firstletter {
+    color: 	#FF1493;
+    font-weight: 700;
+}

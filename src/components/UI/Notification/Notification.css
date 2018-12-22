@@ -1,0 +1,57 @@
+.Icon {
+    color: white;   
+}
+
+.Notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8%;
+    height: 70%;
+}
+
+.Txt {
+    color: white;
+}
+
+.Triangle {
+    position: absolute;
+    margin-top: 2.7vh; 
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 15px 15px;
+    border-color: transparent transparent #ecf0f1 transparent;
+}
+
+.Number {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 15px;
+    min-width: 20px;
+    font-family: 'Work Sans', sans-serif;
+    background-color:#FF1493;
+    border-radius: 50%;
+    font-size: 0.9em;
+    color: white;
+    padding: 3px;
+    transition: 0.5s;
+}
+
+.Icon:active {
+    transform: scale(1.1)
+}
+
+
+@media (max-width: 800px) {
+    .Notification{
+        width: 20%;
+    }
+    .Icon {
+        transform: scale(0.8);
+    }
+    .Number {
+        margin-left: 12px;
+        font-size: 0.7em;
+    }
+}

@@ -1,0 +1,63 @@
+.Container {
+    width: 100%;
+}
+
+.ProgressBar {
+    counter-reset: step;
+}
+
+.ProgressBar li {
+    list-style-type: none;
+    float: left;
+    width: 33.33%;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+
+.ProgressBar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #24292e;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: #24292e;
+}
+
+.ProgressBar li:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #24292e;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+    transition: All 2s ease;
+}
+
+.ProgressBar li:first-child:after {
+    content: none;
+}
+
+.Active {
+    color: #28B873;
+}
+
+.ProgressBar li.Active:before {
+    border-color: #FF1493;
+    background-color: #FF1493;
+    transition: All 2s ease;
+}
+
+.ProgressBar li.Active + li:after {
+    background-color: #FF1493;
+    transition: All 2s ease;
+}

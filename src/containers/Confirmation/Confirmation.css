@@ -1,0 +1,68 @@
+.Form {
+    display: block;
+    box-shadow: 0px 2px 18px 2px rgba(0,0,0,0.75);
+    padding: 20px;
+    width: 60%;
+    margin: auto auto;
+    box-sizing: border-box;
+    background-color: white;
+    text-align: center;
+    border-radius: 0.4em;
+}
+
+
+.Label {
+    display: inline-block;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
+    margin: 20px;
+    color: #24292e;
+}
+
+.Exclamation {
+    color: 	#FF1493;
+    font-weight: 700;
+}
+
+.Btn {
+    display: block;
+    border: 1px solid #FF1493;
+    border-radius: 20px;
+    background-color: #FF1493;
+    margin:  auto;
+    height: 20%;
+    width: 40%;
+    font-weight: 400; 
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.1em;
+    color: white;
+    min-width: 80px;
+    outline: none;
+    transition: 0.8s;
+}
+
+.Btn:hover {
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 570px) {
+    .Form {
+        margin: 200px auto;
+        padding: 10px;
+    }
+    .Btn {
+        margin: 10px;
+        width: 70%;
+    }
+    .Label {
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .Form {
+        width: 800px;
+    }
+}
