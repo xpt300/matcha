@@ -6,7 +6,7 @@ import Button from '../../UI/Button/Button';
 import Input from '../../UI/Input/Input';
 import ModalTransition from '../../UI/Modal/ModalTransition/ModalTransition';
 import FacebookLogin from 'react-facebook-login';
-import Local from '../../../../env.js';
+import * as Local from '../../../env.js';
 
 class Loginpassword extends Component {
     state = {

@@ -7,4 +7,3 @@ export {
     newAddress,
     newPassword
 } from './account';
-

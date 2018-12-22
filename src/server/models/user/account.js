@@ -9,7 +9,7 @@ const cryptoRandomString = require('crypto-random-string');
 var xss = require("xss");
 const publicIp = require('public-ip');
 const axios = require('axios');
-const Local = require('../../../../env');
+const Local = require('../../../env');
 
 router.get('/mail', (req, res) => {
     let data = {};

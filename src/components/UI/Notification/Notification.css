@@ -14,16 +14,6 @@
     color: white;
 }
 
-.Triangle {
-    position: absolute;
-    margin-top: 2.7vh; 
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 15px 15px 15px;
-    border-color: transparent transparent #ecf0f1 transparent;
-}
-
 .Number {
     position: absolute;
     margin-left: 20px;
@@ -44,9 +34,6 @@
 
 
 @media (max-width: 800px) {
-    .Notification{
-        width: 20%;
-    }
     .Icon {
         transform: scale(0.8);
     }

@@ -23,7 +23,6 @@ class Notification extends Component {
                 <FontAwesomeIcon icon="bell" className={classes.Icon} size="lg"/>
                 {this.props.children > 0 ?  <span className={classes.Number}>{this.props.children}</span>
                                         : null }
-                {this.state.notif ? <div className={classes.Triangle}></div> : null}
             </div>
             {this.state.notif ? <ViewNotif/> : null}
         </Aux>
