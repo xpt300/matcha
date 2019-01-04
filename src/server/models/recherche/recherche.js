@@ -40,14 +40,18 @@ router.post('/coordonnees', (req,res) => {
     // connexion.query("INSERT INTO matcha.user (`latitude`, `longitude`, `distance`, `max_age`, `min_age`) VALUES ?", [data], )
 });
 
-router.post('/recherche', (req,res) => {
-    console.log(req.body, "models")
+router.post('/reglage', (req,res) => {
     let data = {};
     for(var key in req.body) {
         data[key] = xss(req.body[key])
     }
-    console.log(data, "models test")
-    connexion.query("INSERT INTO matcha.user (`latitude`, `longitude`, `distance`, `max_age`, `min_age`) VALUES ?", [data], )
+    connexion.query("SELECT * FROM matcha.reglage WHERE id = ?; SELECT id_tag FROM matcha.tag_id WHERE id_user = ?", [data.id, data.id], (err, resu) => {
+        if (err) {
+            console.log(err)
+            res.status(500).send(err);
+        }
+        res.status(200).send(resu);
+    })
 });
 
 module.exports = router;

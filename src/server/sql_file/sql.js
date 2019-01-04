@@ -35,9 +35,10 @@ connexion.query("SHOW DATABASES", function(err, results, fields){
       }
       console.log('USE MATCHA [OK]');
       faker.locale = "fr";
-      var sql = "INSERT INTO `user`(`cle`,`prenom`, `nom`, `mail`, `mot_de_passe`, `compte_valide`, `notification`, `address`, `ville`, `pays`, `codePostal`, `biographie`, `anniversaire`) VALUES ?";
+      var sql = "INSERT INTO `user`(`cle`,`prenom`, `nom`, `mail`, `mot_de_passe`, `compte_valide`, `notification`, `address`, `ville`, `pays`, `codePostal`, `biographie`, `connect`, `dernier_co`, `anniversaire`, `popularite`) VALUES ?";
       var array = [];
       for (var i = 0; i < 500; i++){
+        const date = new Date();
         const salt = bcrypt.genSaltSync(10);
         const hash = bcrypt.hashSync("root42", salt);
         const key = bcrypt.hashSync(cryptoRandomString(10), 10);
@@ -46,7 +47,7 @@ connexion.query("SHOW DATABASES", function(err, results, fields){
         var arrayFaker = [[key, faker.name.firstName(), faker.name.lastName(), 
           faker.internet.email(), hash, 'N', 'Y', 
           faker.address.streetAddress(), faker.address.city(), faker.address.state(), faker.address.zipCode(), 
-          faker.lorem.sentences(), dob]];
+          faker.lorem.sentences(), 'N', date, dob, Math.floor((Math.random() * (10 - 1 + 1)) + 1)]];
           array = array.concat(arrayFaker);
       }
       connexion.query(sql, [array], function(err, results, fields) {

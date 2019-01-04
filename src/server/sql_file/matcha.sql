@@ -14,7 +14,10 @@ create table if not exists USER(
     pays VARCHAR(80),
     codePostal INT,
     biographie TEXT,
-    anniversaire DATE
+    connect ENUM ('Y', 'N'),
+    dernier_co DATE,
+    anniversaire DATE,
+    popularite INT
 );
 create table if not exists IMG(
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,

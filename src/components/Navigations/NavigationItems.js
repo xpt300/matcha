@@ -10,7 +10,7 @@ const NavigationItems = () => {
         <Aux>
             <ul className={classes.NavigationItems}>
                 <NavigationItem link="/user" icon='user'>
-                    Mon Compte
+                    Mon Compte 
                 </NavigationItem>
                 <NavigationItem link="/" icon='power-off'>
                     Déconnexion 

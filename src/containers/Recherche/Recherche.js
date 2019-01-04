@@ -8,6 +8,7 @@ import axios from 'axios';
 
 class Recherche extends Component {
     state = {
+        reglage: {},
         data: {
             user: [[
                 'Maxime',
@@ -28,11 +29,15 @@ class Recherche extends Component {
                     console.log(response.data)
                     if (response.status !== 200) {
                         this.props.history.push('/')
+                    } else {
+                        axios.post('http://localhost:8000/recherche/reglage', response.data)
+                            .then((response) => {
+                                this.setState({reglage : response.data[0]})
+                            })
                     }
-                    // } else {
-                    //     axios.post('http://localhost:8000/recherche/reglage',response)
-                    // }
                 });
+        } else {
+            this.props.history.push('/')
         }
     }
 
@@ -50,6 +55,7 @@ class Recherche extends Component {
     }
 
     render() {
+        console.log(this.state.reglage, "state")
         return (
             <div className={classes.Recherche}>
                 <Reglage/>

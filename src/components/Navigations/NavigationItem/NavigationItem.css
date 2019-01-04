@@ -1,12 +1,13 @@
 .Nav {
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     border-radius: 30px;
     border: 1px solid #FF1493;
     background-color: #24292e;
     margin: 10px;
+    padding: 0px 15px;
     height: 60%;
-    width: 200vh;
+    width: 18vw;
     max-width: 150px;
     list-style: none;
     transition: transform .2s;
@@ -39,5 +40,8 @@
 @media (max-width: 550px) {
     .Nav a {
         font-size: 0.6em;
+    }
+    .Nav {
+        width: 10vw;;
     }
 }
