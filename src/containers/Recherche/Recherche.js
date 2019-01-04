@@ -55,7 +55,6 @@ class Recherche extends Component {
     }
 
     render() {
-        console.log(this.state.reglage, "state")
         return (
             <div className={classes.Recherche}>
                 <Reglage/>
